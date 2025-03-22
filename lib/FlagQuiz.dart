@@ -140,7 +140,7 @@ class _FlagQuizScreenState extends State<FlagQuizScreen> {
   String playerName = "Oyuncu1";
   String? selectedAnswer;
 
-  // Daha önce sorulan ülkeler
+
   List<String> askedCountries = [];
 
   @override
@@ -153,7 +153,7 @@ class _FlagQuizScreenState extends State<FlagQuizScreen> {
     final random = Random();
     List<String> keys = countryFlags.keys.toList();
 
-    // Daha önce sorulmuş bir ülke varsa, tekrar seçilmesini engelleyelim
+
     String newCountry;
     do {
       newCountry = keys[random.nextInt(keys.length)];
@@ -162,7 +162,7 @@ class _FlagQuizScreenState extends State<FlagQuizScreen> {
     correctAnswer = newCountry;
     flagUrl = countryFlags[correctAnswer]!;
 
-    // Seçenekleri oluşturma (1 doğru cevap ve 3 yanlış cevap)
+
     options = [correctAnswer];
     while (options.length < 4) {
       String randomOption = keys[random.nextInt(keys.length)];
@@ -170,12 +170,11 @@ class _FlagQuizScreenState extends State<FlagQuizScreen> {
         options.add(randomOption);
       }
     }
-    options.shuffle(); // Seçenekleri karıştırıyoruz
+    options.shuffle(); 
 
-    // Yeni soruyu 'askedCountries' listesine ekliyoruz
+
     askedCountries.add(correctAnswer);
 
-    // Eğer 5 soru sorulmuşsa, listeyi sıfırlayalım
     if (askedCountries.length > 10) {
       askedCountries = [];
     }
@@ -238,7 +237,7 @@ class _FlagQuizScreenState extends State<FlagQuizScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(title: Text("Bayrak Quiz")),
-      backgroundColor: const Color.fromARGB(255, 146, 145, 145), // Arka plan rengini koyu gri yapıyoruz
+      backgroundColor: const Color.fromARGB(255, 146, 145, 145), 
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
@@ -256,18 +255,18 @@ class _FlagQuizScreenState extends State<FlagQuizScreen> {
                 bool isCorrect = option == correctAnswer;
                 bool isSelected = selectedAnswer == option;
 
-                // Seçeneğin rengini belirliyoruz
+
                 Color buttonColor;
                 if (selectedAnswer != null) {
                   if (isCorrect) {
-                    buttonColor = Colors.green; // Doğru cevap
+                    buttonColor = Colors.green; 
                   } else if (isSelected) {
-                    buttonColor = Colors.red; // Yanlış cevap
+                    buttonColor = Colors.red; 
                   } else {
-                    buttonColor = Colors.grey[300]!; // Diğer seçenekler
+                    buttonColor = Colors.grey[300]!; 
                   }
                 } else {
-                  buttonColor = const Color.fromARGB(255, 233, 241, 248); // Normal durumda mavi
+                  buttonColor = const Color.fromARGB(255, 233, 241, 248); 
                 }
 
                 return Padding(
