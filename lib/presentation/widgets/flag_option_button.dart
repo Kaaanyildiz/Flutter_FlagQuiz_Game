@@ -18,23 +18,64 @@ class FlagOptionButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    Color color;
+    // Renk belirleme
+    Color backgroundColor;
+    Color textColor;
+    IconData? icon;
+    
     if (!isDisabled) {
-      color = Colors.blueGrey[50]!;
+      backgroundColor = Colors.white;
+      textColor = Colors.black87;
+      icon = null;
     } else if (isCorrect) {
-      color = Colors.green;
+      backgroundColor = Colors.green[100]!;
+      textColor = Colors.green[800]!;
+      icon = Icons.check_circle;
     } else if (isSelected) {
-      color = Colors.red;
+      backgroundColor = Colors.red[100]!;
+      textColor = Colors.red[800]!;
+      icon = Icons.cancel;
     } else {
-      color = Colors.grey[300]!;
+      backgroundColor = Colors.grey[100]!;
+      textColor = Colors.grey[800]!;
+      icon = null;
     }
 
-    return Padding(
-      padding: const EdgeInsets.symmetric(vertical: 6),
+    return Container(
+      margin: const EdgeInsets.only(bottom: 10),
+      width: double.infinity,
       child: ElevatedButton(
-        style: ElevatedButton.styleFrom(backgroundColor: color),
+        style: ElevatedButton.styleFrom(
+          backgroundColor: backgroundColor,
+          padding: const EdgeInsets.symmetric(vertical: 16, horizontal: 20),
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(12),
+          ),
+          elevation: isDisabled ? 0 : 4,
+        ),
         onPressed: isDisabled ? null : onTap,
-        child: Text(text),
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          children: [
+            Expanded(
+              child: Text(
+                text,
+                style: TextStyle(
+                  color: textColor,
+                  fontSize: 16,
+                  fontWeight: FontWeight.w500,
+                ),
+                overflow: TextOverflow.ellipsis,
+              ),
+            ),
+            if (icon != null)
+              Icon(
+                icon,
+                color: textColor,
+                size: 24,
+              ),
+          ],
+        ),
       ),
     );
   }
