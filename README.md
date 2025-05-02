@@ -2,7 +2,7 @@
 
 <div align="center">
   
-  ![World Quest Banner](assets/images/app_logo.png)
+  ![World Quest Banner](https://github.com/user-attachments/assets/03317b5e-187d-4e05-9b4e-6b4be1c50b45)
   
   [![Flutter](https://img.shields.io/badge/Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white)](https://flutter.dev/)
   [![Firebase](https://img.shields.io/badge/Firebase-FFCA28?style=for-the-badge&logo=firebase&logoColor=black)](https://firebase.google.com/)
@@ -41,18 +41,15 @@
 
 <table>
   <tr>
-    <td width="33%" align="center">
-      <img src="assets/images/classic_mode.png" alt="Klasik Mod" width="80"/><br/>
+    <td 
       <b>🔵 Klasik Mod</b><br/>
       <small>10 soruda ne kadar doğru cevap verebilirsin? Her soru için süren var!</small>
     </td>
-    <td width="33%" align="center">
-      <img src="assets/images/time_mode.png" alt="Zaman Yarışı" width="80"/><br/>
+    <td 
       <b>⏱️ Zaman Yarışı</b><br/>
       <small>60 saniye içinde kaç bayrağı doğru tahmin edebilirsin? Zamanla yarış!</small>
     </td>
-    <td width="33%" align="center">
-      <img src="assets/images/streak_mode.png" alt="Yarışma Modu" width="80"/><br/>
+    <td
       <b>🏆 Yarışma Modu</b><br/>
       <small>Sadece 3 yanlış hakkın var! Ne kadar ilerleyebilirsin?</small>
     </td>
@@ -86,11 +83,22 @@ Kendi seviyene göre oyna:
 ## 📸 Ekran Görüntüleri
 
 <div align="center">
-  <img src="screenshots/home_screen.png" alt="Ana Ekran" width="19%"/>
-  <img src="screenshots/category_selection.png" alt="Kategori Seçimi" width="19%"/>
-  <img src="screenshots/difficulty_selection.png" alt="Zorluk Seçimi" width="19%"/>
-  <img src="screenshots/gameplay.png" alt="Oyun Ekranı" width="19%"/>
-  <img src="screenshots/results.png" alt="Sonuç Ekranı" width="19%"/>
+  <table>
+    <tr>
+      <td><img src="https://github.com/user-attachments/assets/3ccbca5a-42fc-4cf1-b7e0-c46bec4e7f3b" width="100%" alt="Ana Ekran" width="33%"/></td>
+      <td><img src="https://github.com/user-attachments/assets/f2902bcd-7b9f-4148-bc0d-1f1efbe9ece0" width="100%" alt="Kategori Seçimi" width="33%"/></td>
+      <td><img src="https://github.com/user-attachments/assets/ce74937d-e908-49df-92d3-02c016c1541c" width="100%" alt="Zorluk Seçimi" width="33%"/></td>
+    </tr>
+  </table>
+</div>
+
+<div align="center">
+  <table>
+    <tr>
+      <td><img src="https://github.com/user-attachments/assets/46bdcf26-7822-420c-bb0c-cea2489fe718" width="100%" alt="Oyun Ekranı" width="33%"/></td>
+      <td><img src="https://github.com/user-attachments/assets/8f34b9f7-5e6a-4eb4-b804-b25dd7f951ce" width="100%" alt="Sonuç Ekranı" width="33%"/></td>
+    </tr>
+  </table>
 </div>
 
 ## 🌟 Özellikler
@@ -252,11 +260,11 @@ Bu proje MIT Lisansı altında lisanslanmıştır. Daha fazla bilgi için [LICEN
   <p>Dünyanın tüm bayraklarını öğrenirken eğlenin!</p>
   
   <p>
-    <a href="mailto:info@worldquest.com">İletişim</a>
+    <a href="kaaanyildz@gmail.com">İletişim</a>
     •
-    <a href="https://github.com/yourusername/flagquizgame/issues">Hata Bildir</a>
+    <a href="https://github.com/Kaaanyildiz/flagquizgame/issues">Hata Bildir</a>
     •
-    <a href="https://github.com/yourusername/flagquizgame/issues">Özellik İste</a>
+    <a href="https://github.com/Kaaanyildiz/flagquizgame/issues">Özellik İste</a>
   </p>
   
   <p>❤️ ile yapılmıştır - 2025</p>
