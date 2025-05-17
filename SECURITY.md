@@ -13,7 +13,7 @@ Currently supported versions of World Quest for security updates:
 We take the security of World Quest seriously. If you believe you've found a security vulnerability, please follow these steps:
 
 1. **Do not disclose the vulnerability publicly**
-2. **Email us directly at [security@worldquest.example.com](mailto:security@worldquest.example.com)** with:
+2. **Email us directly at [kaaanyildz@gmail.com](mailto:kaaanyildz@gmail.com)** with:
    - Description of the vulnerability
    - Steps to reproduce
    - Potential impact
